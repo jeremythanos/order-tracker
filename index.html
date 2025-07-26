@@ -1,14 +1,62 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Order Tracker">
+  <link rel="icon" href="time-favicon.png" type="image/x-icon">
+  <title>Jeremy's Order Tracker</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+
+<body class="flex flex-col items-center justify-center p-4">
+  <div id="contenedorPrincipal"
+    class="p-8 rounded-2xl shadow-xl flex flex-col items-center justify-center max-w-sm w-full h-auto"
+    style="min-height: 50vh; max-height: 100vh;">
+
+    <!-- Título -->
+    <h1 class="text-4xl font-extrabold text-center text-white mt-4 mb-8">
+      Order Tracker
+    </h1>
+
+    <!-- Controles del contador -->
+    <div class="flex items-center justify-center mb-10 w-full">
+      <button id="botonRestar" class="boton-control mr-3">-</button>
+      <input type="number" id="entradaContador" value="0"
+        class="text-8xl font-bold transition-colors duration-300 ease-in-out texto-blanco mx-3">
+      <button id="botonSumar" class="boton-control ml-3">+</button>
+    </div>
+
+    <!-- Botón principal -->
+    <button id="botonAgregar"
+      class="boton-principal">
+      Add Order
+    </button>
+
+    <!-- Información del último pedido -->
+    <div id="infoUltimoPedido" class="mt-4 text-lg text-center">
+      Tab to add an order.
+    </div>
+
+    <!-- Nota de llamada -->
+    <div id="contenedorNotas" class="contenedor-notas mt-4">
+      <p class="texto-nota">
+        "Hello, this is Jeremy calling from [site]. I'm reaching out to request a patient's contact number for medical appointments.<br> Alright, that's all I need, thank you for your time and have a nice day"
+      </p>
+    </div>
+  </div>
+
+  <!-- Información adicional -->
+  <div id="infoPromedio" class="mt-4 text-md text-gray-400 text-center max-w-sm w-full">
+  </div>
+
+  <script src="main.js"></script>
 </body>
+
 </html>

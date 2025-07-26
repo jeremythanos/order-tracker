@@ -1,1 +1,131 @@
-/* Add styles here */
+/* Fuente base y fondo general */
+body {
+    font-family: 'Arial', sans-serif;
+    min-height: 110vh;
+    max-height: 110vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a2e;
+    color: #fff;
+  }
+  
+  /* Contenedor principal */
+  #contenedorPrincipal {
+    background-color: #2a2a4a;
+  }
+  
+  /* Texto dinámico */
+  .texto-blanco {
+    color: #fff;
+  }
+  .texto-verde {
+    color: #0f0;
+  }
+  
+  /* Input del contador */
+  #entradaContador {
+    appearance: textfield;
+    text-align: center;
+    border: none;
+    background: none;
+    outline: none;
+    width: 150px;
+  }
+  #entradaContador::-webkit-inner-spin-button,
+  #entradaContador::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Botones de control (+ y -) */
+  .boton-control {
+    background-image: linear-gradient(to right, #1e3a8a, #1d4ed8); /* Gradiente azul */
+    color: white;
+    padding: 1rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    font-size: 1.875rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+  }
+  .boton-control:hover {
+    transform: scale(1.1);
+    background-image: linear-gradient(to right, #1c3374, #1a41b8);
+  }
+  .boton-control:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5);
+  }
+  .boton-control:active {
+    background-color: #1e3a8a;
+  }
+  
+  /* Botón principal */
+  .boton-principal {
+    background-image: linear-gradient(to right, #1e3a8a, #1d4ed8);
+    color: white;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    max-width: 20rem;
+    font-size: 1.5rem;
+  }
+  .boton-principal:hover {
+    background-image: linear-gradient(to right, #1c3374, #1a41b8);
+    transform: scale(1.05);
+  }
+  
+  /* Contenedor de notas */
+  .contenedor-notas {
+    background-image: linear-gradient(to right, #1e3a8a, #1d4ed8); /* mismo gradiente que los botones */
+    padding: 1rem;
+    border-radius: 0.75rem;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  .texto-nota {
+    font-family: Arial, sans-serif;
+    letter-spacing: 1.2px;
+    color: #fff;
+    font-size: 0.875rem;
+  }
+  
+  /* Animación tipo neón para el borde */
+  @keyframes resplandor-neon {
+    0% {
+      box-shadow: 0 0 5px #04ff00, 0 0 10px #04ff00, 0 0 15px #04ff00,
+                  0 0 20px #00ffff, 0 0 25px #00ffff, 0 0 30px #00ffff;
+    }
+    25% {
+      box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff,
+                  0 0 20px #04ff00, 0 0 25px #04ff00, 0 0 30px #04ff00;
+    }
+    50% {
+      box-shadow: 0 0 5px #ed026c, 0 0 10px #ed026c, 0 0 15px #ed026c,
+                  0 0 20px #00ffff, 0 0 25px #00ffff, 0 0 30px #00ffff;
+    }
+    75% {
+      box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff,
+                  0 0 20px #04ff00, 0 0 25px #04ff00,#04ff00, 0 0 30px #04ff00;
+    }
+    100% {
+      box-shadow: 0 0 5px #0703ff, 0 0 10px #0703ff, 0 0 15px #0703ff,
+                  0 0 20px #00ffff, 0 0 25px #00ffff, 0 0 30px #00ffff;
+    }
+  }
+  .borde-neon {
+    animation: resplandor-neon 1.5s ease-in-out infinite alternate;
+  }
+  /* Add styles here */
