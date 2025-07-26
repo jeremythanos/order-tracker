@@ -29,7 +29,7 @@ Este proyecto es una aplicación web sencilla pero funcional, diseñada para con
 ## 📸 Captura de Pantalla
 
 *Funcionamiento .*
-![alt text](image.png)// hacer un hover o pasar el mouse por encima para ver la imagen
+![alt text](image.png)
 
 ---
 
@@ -38,4 +38,4 @@ Este proyecto es una aplicación web sencilla pero funcional, diseñada para con
 1. Clona el repositorio o descarga los archivos:
 
 ```bash
-https://github.com/jeremythanos/order-tracker.git
+ git clone https://github.com/jeremythanos/order-tracker.git
