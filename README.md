@@ -38,4 +38,4 @@ Este proyecto es una aplicación web sencilla pero funcional, diseñada para con
 1. Clona el repositorio o descarga los archivos:
 
 ```bash
-git clone https://github.com/tu-usuario/contador-pedidos.git
+https://github.com/jeremythanos/order-tracker.git
